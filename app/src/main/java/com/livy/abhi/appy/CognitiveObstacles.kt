@@ -7,22 +7,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class CognitiveDistortions : Fragment() {
+class CognitiveObstacles : Fragment() {
 
     companion object {
-        fun newInstance() = CognitiveDistortions()
+        fun newInstance() = CognitiveObstacles()
     }
 
-    private lateinit var viewModel: CognitiveDistortionsViewModel
+    private lateinit var viewModel: CognitiveObstaclesViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.cognitive_distortions_fragment, container, false)
+        return inflater.inflate(R.layout.cognitive_obstacles_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(CognitiveDistortionsViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(CognitiveObstaclesViewModel::class.java)
         // TODO: Use the ViewModel
     }
 
