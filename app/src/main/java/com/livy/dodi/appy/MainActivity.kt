@@ -1,8 +1,7 @@
-package com.livy.abhi.appy
+package com.livy.dodi.appy
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.livy.abhi.appy.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

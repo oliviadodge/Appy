@@ -2,4 +2,5 @@
     <string name="app_name">Appy</string>
     <string name="close_cognitive_obstacles_panel">Close Cognitive Obstacles panel</string>
     <string name="drag_cognitive_obstacles_panel">Drag Cognitive Obstacles panel</string>
+    <string name="cognitive_distortions">Cognitive Distortions</string>
 </resources>

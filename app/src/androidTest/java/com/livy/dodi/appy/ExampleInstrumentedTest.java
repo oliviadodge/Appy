@@ -1,4 +1,4 @@
-package com.livy.abhi.appy;
+package com.livy.dodi.appy;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

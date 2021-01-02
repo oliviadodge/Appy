@@ -5,47 +5,49 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CognitiveObstacles">
+    tools:context=".cognitiveobstacles.CognitiveObstaclesFragment">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cognitive_obstacles_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/cognitive_obstacles_recycler_view"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="142dp">
 
-    <LinearLayout
-        android:id="@+id/cognitive_obstacles_view_controls"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="142dp">
 
         <ImageButton
             android:id="@+id/cognitive_obstacles_close"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/close_cognitive_obstacles_panel"
             android:src="@android:drawable/ic_menu_close_clear_cancel"
-            tools:layout_editor_absoluteX="46dp"
-            tools:layout_editor_absoluteY="44dp"
-            android:contentDescription="@string/close_cognitive_obstacles_panel" />
-
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
             android:id="@+id/cognitive_obstacles_drag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/drag_cognitive_obstacles_panel"
-            android:src="@android:drawable/ic_menu_sort_by_size"
-            tools:layout_editor_absoluteX="46dp"
-            tools:layout_editor_absoluteY="44dp" />
+            android:src="@drawable/ic_drag"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cognitive_distortions"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cognitive_obstacles_drag"
+            app:layout_constraintStart_toEndOf="@+id/cognitive_obstacles_close"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/cognitive_obstacles_recycler_view"

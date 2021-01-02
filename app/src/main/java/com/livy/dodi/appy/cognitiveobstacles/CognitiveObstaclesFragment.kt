@@ -1,4 +1,4 @@
-package com.livy.abhi.appy
+package com.livy.dodi.appy.cognitiveobstacles
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -6,11 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.livy.dodi.appy.R
 
-class CognitiveObstacles : Fragment() {
+class CognitiveObstaclesFragment : Fragment() {
 
     companion object {
-        fun newInstance() = CognitiveObstacles()
+        fun newInstance() = CognitiveObstaclesFragment()
     }
 
     private lateinit var viewModel: CognitiveObstaclesViewModel
